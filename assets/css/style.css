@@ -7,6 +7,8 @@
 
 html {
     scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color, #d4af37) var(--accent-color, #f4e4c1);
 }
 
 body {
@@ -2204,4 +2206,27 @@ body {
     justify-content: center;
     float: none !important;
   }
+}
+
+/* Custom Scrollbar sesuai tema elegan */
+::-webkit-scrollbar {
+  width: 12px;
+  background: var(--accent-color, #f4e4c1);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--primary-color, #d4af37), var(--blue-primary, #4a90e2));
+  border-radius: 8px;
+  border: 2px solid var(--accent-color, #f4e4c1);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, var(--deep-burgundy, #722f37), var(--primary-color, #d4af37));
+}
+::-webkit-scrollbar-corner {
+  background: var(--accent-color, #f4e4c1);
+}
+
+/* Scrollbar Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color, #d4af37) var(--accent-color, #f4e4c1);
 }
